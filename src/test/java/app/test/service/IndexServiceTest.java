@@ -10,7 +10,7 @@ import org.seasar.framework.util.ResourceUtil;
 import org.skyscreamer.jsonassert.JSONAssert;
 
 /**
- * {@link CityService}のテストクラスです。
+ * {@link IndexService}のテストクラスです。
  * 
  */
 public class IndexServiceTest extends S2TestCase {
@@ -34,11 +34,13 @@ public class IndexServiceTest extends S2TestCase {
      * @throws Exception
      */
     public void test検索テスト() throws Exception {
-		JSONAssert.assertEquals(FileUtils.readFileToString(getFile()),JSON.encode(indexService.index().get("list")),false);
+        JSONAssert.assertEquals(FileUtils.readFileToString(getFile()),
+                JSON.encode(indexService.index().get("list")), false);
     }
-    
-    private static File getFile(){
-    	return ResourceUtil.getResourceAsFile(ResourceUtil.convertPath("index.json", IndexServiceTest.class));
+
+    private static File getFile() {
+        return ResourceUtil.getResourceAsFile(ResourceUtil.convertPath(
+                "index.json", IndexServiceTest.class));
     }
-    
+
 }
