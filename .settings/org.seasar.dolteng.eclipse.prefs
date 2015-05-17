@@ -1,0 +1,8 @@
+DaoType=S2JDBC
+DefaultResourcePath=/sastruts-testing-framework/src/main/resources
+DefaultRootPackage=app.test
+DefaultSrcPath=/sastruts-testing-framework/src/main/java
+ServletPath=sastruts-testing-framework
+ViewType=SA-Struts
+WebContentsRoot=src/main/webapp
+eclipse.preferences.version=1
