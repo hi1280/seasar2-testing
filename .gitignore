@@ -4,12 +4,6 @@
 *.war
 *.ear
 
-# Java
-*.class
-*.jar
-*.war
-*.ear
-
 # OS
 Thumbs.db
 .DS_Store
