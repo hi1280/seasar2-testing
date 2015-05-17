@@ -1,1 +1,0 @@
-# seasar2-testing
